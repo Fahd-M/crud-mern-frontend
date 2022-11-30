@@ -29,7 +29,7 @@ function CreatePost() {
     event.preventDefault();
     //console.log(post) will give object {title:whatever, description:whatever}
     axios
-      .post("https://crud-mern-backend.onrender.com/create", post)
+      .post("/create", post)
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
 
